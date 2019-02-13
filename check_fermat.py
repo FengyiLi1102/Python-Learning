@@ -24,5 +24,3 @@ def check_fermat_input():
     c = int(input('Please type your c: '))
     n = int(input('Please type your n: '))
     check_fermat(a, b, c, n)
-
-check_fermat_input()
