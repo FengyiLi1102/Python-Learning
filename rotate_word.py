@@ -11,4 +11,4 @@ def rotate_word(word, num_rotate):
 
     return encrypted_word
 
-print(rotate_word('melon', -10))
+print(rotate_word('melon', 4))
