@@ -6,12 +6,19 @@ def most_frequent(word):
     """
     Print frequency of each letter in the word.
     :param word:
-    :return: None
+    :return: A dictionary containing (letters) : frequency
     """
 
+    value_list = []
+
+    # Inverse the letter with the frequency.
     dic = inverse_dict(histgram(word))
     key_list = list(dic.keys())
     key_list.sort(reverse=True)
-    for key in key_list:
-        print('{} {}'.format(key, dic.get(key)))
+    for i in key_list:
+        value_list.append(tuple(dic[i]))
+
+    dict1 = dict(zip(value_list, key_list))
+
+    return dict1
 
